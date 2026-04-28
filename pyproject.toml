@@ -1,13 +1,13 @@
 [build-system]
-    requires = ["setuptools>=61.0"]
+    requires = ["setuptools", "wheel"]
     build-backend = "setuptools.build_meta"
 
 [project]
-    name = "deevcs"
-    version = "0.1.17"
+    name = "dee"
+    version = "0.1.0"
     description = "Versioning tool made with love"
     authors = [
-        { name = "Wendrew Oliveira", email = "about.wendrew@gmail.com" }
+        { name = "Wendrew Oliveira", email = "developer.wendrew@gmail.com"}
     ]
     requires-python = ">=3.11"
     dependencies = [
@@ -22,7 +22,10 @@
     ]
 
 [project.scripts]
-    dee = "cli.commands:cli"
- 
+    dee = "dee.cli.main:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
 [tool.setuptools.packages.find]
     where = ["src"]

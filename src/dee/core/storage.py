@@ -13,7 +13,7 @@ import zipfile
 import sqlite3
 import shutil
 from datetime import datetime
-from optmizations.numba_utils import fast_checksum
+from dee.optimizations.numba_utils import fast_checksum
 
 
 class Repo:

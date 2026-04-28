@@ -6,10 +6,10 @@ import hashlib
 import click
 import requests
 import subprocess
-from core.storage import Repo
+from dee.core.storage import Repo
 
 
-VERSION = "0.1.17"
+VERSION = "0.1.0"
 
 def check_for_updates():
     if os.getenv("DEE_DISABLE_UPDATE_CHECK"):
